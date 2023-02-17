@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia Bootstrap</title>
+
+    <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- <link href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"> -->
+</head>
+
+<body style="background-color: #F0F0F0;">
+
+
+    <!-- Formas de integrar Boostrap a mi documento HTML 
+
+    1. Usando el CDN (Content Delivery Network) donde hacemos una referencia al link del servidor de Boostrap para tomar esos estilos y usarlos.
+
+    2. Usando el archivo de la seccion "Download" y agregandolo como si fuera una carpeta de assets
+-->
+
+
+    <!-- Caracterticas fundamentales de Boostrap
+
+    - Mobile first
+    - Grid responsive
+    - Componentes reutilizables
+    - Containers
+
+-->
+
+
+    <!-- TODO lo que usamos con Boostrap, debe ir entre contenedores (div) 
+    El Grid o la grilla debe ir siempre dentro de un div
+    Para declarar filas, usamos la palabra row
+    Para declarar columnas, usamos la palabra column
+    Utilizamos 12 columnas, si nos pasamos de estas 12, se agrega hacia abajo
+-->
+
+
+    <div class="container">
+        <div class="col-12 border">
+            <h1 style="text-align: center; color: #21325E">Cartel 14 de Febrero</h1>
+        </div>
+    </div>
+
+    <!-- Grid de 12 columnas -->
+
+    <div class="container" id="pregunta">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center" style="color: #3E497A;">¿Quieres ser mi novia?</h2>
+            </div>
+        </div>
+        <div class="col-12 border">
+            <div id="carouselExampleFade" class="carousel slide text-center" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/imagen3.png" class="img-fluid mx-auto d-block"
+                            style="max-width: 50%; height: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/imagen1.png" class="img-fluid mx-auto d-block"
+                            style="max-width: 50%; height: auto;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/imagen2.png" class="img-fluid mx-auto d-block"
+                            style="max-width: 50%; height: auto;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="container" id="ventajas">
+                <div class="row">
+                    <div class="col-6 border">
+                        <h4 style="text-align: center; color: #21325E">Ventajas</h4>
+                        <!-- Modal -->
+                        <div class="text-center">
+                            <button style="border-color: #F1D00A; background-color:#21325E;" type="button"
+                                class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Conoce las ventajas de salir conmigo
+                            </button>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Me gustan las peliculas de terror</li>
+                                            <li>Me gusta el cine</li>
+                                            <li>Me encanta aprender sobre el universo y el espacio</li>
+                                            <li>Me gusta mucho comer y cocinar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 border">
+                        <h4 style="text-align: center; color: #21325E">Desventajas</h4>
+                        <div class="text-center">
+                            <button style="border-color: #F1D00A; background-color:#21325E;" type="button"
+                                class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Conoce las desventajas de salir conmigo
+                            </button>
+                        </div>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Ninguna </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenedor imagen perrito y verso o poema -->
+            <div class="container" id="poema">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 border">
+                        <img src="./Images/perrito.png" alt="" class="img-fluid mx-auto d-block"
+                            style="max-width: 75%; height: auto;">
+                    </div>
+                    <div class="col-md-8 col-sm-12 border d-flex align-items-center justify-content-center">
+                        <p style="color: #3E497A;" class="text-center">
+                            Podrá nublarse el sol eternamente;<br>
+                            Podrá secarse en un instante el mar;<br>
+                            Podrá romperse el eje de la tierra.<br>
+                            Como un débil cristal.<br>
+                            ¡Todo sucederá! Podrá la muerte<br>
+                            Cubrirme con su fúnebre crespón;<br>
+                            Pero jamás en mí podrá apagarse<br>
+                            La llama de tu amor.<br></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeria de Imagenes -->
+            <div class="container" id="galera">
+                <div class="row border">
+                    <div class="col-4 border">
+                        <img src="./Images/1.png" alt="" class="img-fluid mx-auto d-block"
+                            style="max-width: 75%; height: auto;">
+                    </div>
+                    <div class="col-4 border">
+                        <img src="./Images/2.png" alt="" class="img-fluid mx-auto d-block"
+                            style="max-width: 75%; height: auto;">
+                    </div>
+                    <div class="col-4 border">
+                        <img src="./Images/3.png" alt="" class="img-fluid mx-auto d-block"
+                            style="max-width: 75%; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="pregunta">
+                <div class="row">
+                    <div class="col-12 border text-center">
+                        <h4 style="text-align: center; color: #21325E">Entonces, ¿aceptas?</h4>
+                        <label for="respuesta">Sí</label>
+                        <input type="radio" name="respuesta">
+                        <label for="respuesta">Sí</label>
+                        <input type="radio" name="respuesta">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="pregunta">
+                <div class="row">
+                    <div class="col-5 border">
+                        <h4 style="text-align: center; color: #21325E">Si me quieres regalar dinero!</h4>
+                        <br>
+                        <div id="smart-button-container">
+                            <div class="text-center">
+                                <div id="paypal-button-container" class="w-100 d-flex justify-content-center"></div>
+                            </div>
+                        </div>
+                        <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
+                            data-sdk-integration-source="button-factory"></script>
+                        <script>
+                            function initPayPalButton() {
+                                paypal.Buttons({
+                                    style: {
+                                        shape: 'rect',
+                                        color: 'blue',
+                                        layout: 'vertical',
+                                        label: 'paypal',
+                                        height: 50,
+                                        width: 100,
+
+                                    },
+
+                                    createOrder: function (data, actions) {
+                                        return actions.order.create({
+                                            purchase_units: [{ "description": "Regálame dinero a través de Paypal!", "amount": { "currency_code": "USD", "value": 100 } }]
+                                        });
+                                    },
+
+                                    onApprove: function (data, actions) {
+                                        return actions.order.capture().then(function (orderData) {
+
+                                            // Full available details
+                                            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                                            // Show a success message within this page, e.g.
+                                            const element = document.getElementById('paypal-button-container');
+                                            element.innerHTML = '';
+                                            element.innerHTML = '<h3>Gracias por regalarme dinero!!</h3>';
+
+                                            // Or go to another URL:  actions.redirect('thank_you.html');
+
+                                        });
+                                    },
+
+                                    onError: function (err) {
+                                        console.log(err);
+                                    }
+                                }).render('#paypal-button-container');
+                            }
+                            initPayPalButton();
+                        </script>
+                    </div>
+                    <div class="col-7 border">
+                        <h4 style="text-align: center; color: #21325E">Te recomiendo esta playlist</p>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/album/5EdGgMlsJ7bv8IUqkaaPZN?utm_source=generator&theme=0"
+                                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container" id="pregunta">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="color: #3E497A;" class=text-center>Contáctame!</h1>
+                <!-- Formulario de Contacto -->
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label" style="color: #3E497A;">Correo
+                        Electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label" style="color: #3E497A;">Menciona por que
+                        te interesa
+                        salir conmigo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Funcionalidades -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
